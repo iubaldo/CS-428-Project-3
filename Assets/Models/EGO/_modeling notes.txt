@@ -1,0 +1,3 @@
+remove reference images 
+convert ngons to quads
+do texturing

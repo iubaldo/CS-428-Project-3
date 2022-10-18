@@ -1,0 +1,22 @@
+50% of the points on the project is for creating a version of the CDRLC atrium with:
+10 unique models from the web (remember to cite the creators)
+5 unique 3D models that you create on your own (more on this below)
+at least 5 of the models need to have appropriate physics and collliders to be grabbable, droppable, and tossable, and collide with the floor
+a new lighting scheme with at least 2 new appropriate lights. You can also move / modify the existing lights.
+at least 1 relevant (and not annoying) ambient sound or piece of music
+5 new unique 'flat' models with images (hanging banners, rugs, wall art) where the textures can come from cited creators
+at least 2 of the 3D models should be animated and move, or move some of their parts
+at least 5 of the 3D models need to have appropriate physics and collliders to be grabbable, droppable, and tossable, and collide with other parts of the kiosk and the floor
+at least two of the models need to be larger than a person, and two the size a person could easily pick up (in general your objects should have a wide range of scales)
+
+30% of the points on the project are for ...
+the user needs to be able to interact with at least 2 objects in the scene using their hand and have each of those objects produce new objects (i.e. every time you touch a vending machine a new something pops out, or every time you touch the water dispenser water flows out. Interaction must happen locally with the users hand intersecting the object, not at distance.
+at least 4 unique sounds that get louder as you get closer, or that are triggered by interacting with objects in the scene, or that sound when objects hit other objects.
+at least one 3D object that moves though the scene on its own (but not through the walls) e.g. a bird, drone, butterfly, robot on the floor.
+at least one particle system
+each member of your team needs to use Makehuman and Mixamo (or similar tool) to create a 1:1 scale (anonymous) student or faculty member, wearing something G rated, with a suitable G rated idle animation. The person should say something appropriate when you touch them with either controller.
+
+20% of the points on the project are for ...
+have one functional lever or dial that the user can use to affect something (e.g. a light a sound, location of an object) in the scene
+an ability to easily teleport to 3 fixed interesting locations in the scene (e.g. to the different floors to get a look at the atrium from those locations)
+ensure that the user can not push themselves into the sky by holding objects under their head
