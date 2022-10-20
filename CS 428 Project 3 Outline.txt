@@ -20,3 +20,16 @@ each member of your team needs to use Makehuman and Mixamo (or similar tool) to 
 have one functional lever or dial that the user can use to affect something (e.g. a light a sound, location of an object) in the scene
 an ability to easily teleport to 3 fixed interesting locations in the scene (e.g. to the different floors to get a look at the atrium from those locations)
 ensure that the user can not push themselves into the sky by holding objects under their head
+
+
+environment will be themed after briah and atziluth layers
+
+
+idea: whitenight suppression
+	push a button, whitenight breaches containment and triggers a boss battle
+		play the cutscene
+		12 apostles spawn around the scene (use a basic human dummy model but with wings + halo + weapon)
+			user must go around and smack them with an EGO
+			apostles will shoot projectiles at the player to dodge 
+				should be slow moving, not an actual threat
+		maybe just make whitenight a png that looks towards the player
