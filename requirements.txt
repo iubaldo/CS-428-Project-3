@@ -1,0 +1,18 @@
+20 web imported models
+10 3D models
+10 Models w/ physics
+2 new lighting schemes
+2 relevant pieces of music
+5 new flat models w/ images (rugs,banners, wall art)
+4 Animated/moving 3D models
+10 3D models w/ physics and colliders
+(4 models should  larger than a person, and 4 the size a person could pick up (wide range of scale))
+4 Objects that produce new objects.
+8 unique sounds that are proximity based or triggered by interactions
+One particle syustem
+2 3d objects that move through the scene on its own
+
+our vroid models (new outfits)
+2 dials that affect the scene
+ability to teleport to fixed locations
+remove the stupid collision thing.
