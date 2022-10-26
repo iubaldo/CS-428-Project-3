@@ -29,7 +29,10 @@ idea: whitenight suppression
 	push a button, whitenight breaches containment and triggers a boss battle
 		play the cutscene
 		12 apostles spawn around the scene (use a basic human dummy model but with wings + halo + weapon)
+			spawn 4 at a time, 3 phases in total
 			user must go around and smack them with an EGO
+				maybe just give the player solemn vow since guns are easy to understand
 			apostles will shoot projectiles at the player to dodge 
 				should be slow moving, not an actual threat
+				bullet hell time bb
 		maybe just make whitenight a png that looks towards the player
