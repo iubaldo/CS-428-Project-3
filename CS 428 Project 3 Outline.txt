@@ -36,3 +36,6 @@ idea: whitenight suppression
 				should be slow moving, not an actual threat
 				bullet hell time bb
 		maybe just make whitenight a png that looks towards the player
+		
+notes:
+	hide/cull parts of the building out of view/range of the player to save on processing power
