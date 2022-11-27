@@ -2,30 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// basically just FloorManagerLite
+// basically just trackManagerLite
 public class BGMManager : MonoBehaviour
 {
     bool canSwitch = true;
 
     //Grab the Audio from the record player.
     public AudioSource audioSource;
-    public AudioClip literatureBGM;
-    public AudioClip technologyBGM;
-    public AudioClip historyBGM;
-    public AudioClip artBGM;
+    public AudioClip track1;
+    public AudioClip track2;
 
 
-    public void SwitchFloors(int targetFloor)
+    public void Switchtracks(int targetTrack)
     {
-        if (canSwitch && targetFloor != (int)Globals.selectedFloor) // don't allow user to switch floors during a switch
+        if (canSwitch) // don't allow user to switch tracks during a switch
         {
             canSwitch = false;
-            StartCoroutine(FadeOut(targetFloor));
+            StartCoroutine(FadeOut(targetTrack));
         }
     }
 
 
-    IEnumerator FadeOut(int floor)
+    IEnumerator FadeOut(int track)
     {
         float waitTime = 5f;
         float startTime = Time.time;
@@ -37,23 +35,21 @@ public class BGMManager : MonoBehaviour
             audioSource.volume = Mathf.Lerp(audioSource.volume, 0, (Time.time - startTime) / waitTime);
         }
 
-        StartCoroutine(FadeIn(floor)); // when done, fade in the next floor
+        StartCoroutine(FadeIn(track)); // when done, fade in the next
         yield return null;
     }
 
 
-    IEnumerator FadeIn(int floor)
+    IEnumerator FadeIn(int track)
     {
         float waitTime = 5f;
         float startTime = Time.time;
         float endTime = startTime + waitTime;
 
-        switch (floor)
+        switch (track)
         {
-            case 0: audioSource.clip = historyBGM; break;
-            case 1: audioSource.clip = technologyBGM; break;
-            case 2: audioSource.clip = literatureBGM; break;
-            case 3: audioSource.clip = artBGM; break;
+            case 0: audioSource.clip = track1; break;
+            case 1: audioSource.clip = track2; break;
         }
         audioSource.Play();
 
