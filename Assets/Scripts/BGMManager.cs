@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// basically just trackManagerLite
+// basically just trackManagerLite, only switch between two tracks
 public class BGMManager : MonoBehaviour
 {
     bool canSwitch = true;
 
     //Grab the Audio from the record player.
     public AudioSource audioSource;
-    public AudioClip track1;
-    public AudioClip track2;
+    public List<AudioClip> tracks;
 
 
     public void Switchtracks(int targetTrack)
@@ -46,11 +45,11 @@ public class BGMManager : MonoBehaviour
         float startTime = Time.time;
         float endTime = startTime + waitTime;
 
-        switch (track)
-        {
-            case 0: audioSource.clip = track1; break;
-            case 1: audioSource.clip = track2; break;
-        }
+        if (track >= 0 && track < tracks.Count)
+            audioSource.clip = tracks[track];
+        else
+            Debug.LogError("track index out of bounds");
+
         audioSource.Play();
 
         while (Time.time < endTime)
