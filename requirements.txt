@@ -5,13 +5,13 @@
 2 relevant pieces of music - Adding the floor themes + index theme 
 5 new flat models w/ images (rugs,banners, wall art) - 4 Carpets, Modified the walls, added Icons for each floor/location
 4 Animated/moving 3D models - Binah, Hokma
-10 3D models w/ physics and colliders -
+10 3D models w/ physics and colliders - 3x apostle weapons, blue star, 
 (4 models should  larger than a person, and 4 the size a person could pick up (wide range of scale)) - 
      -Larger : Angel Statue,
      -Smaller : Binah Cup, Binah Saucer, 
 4 Objects that produce new objects - Prolly apostle buttons/black star
 8 unique sounds that are proximity based or triggered by interactions - Hokma floor, binah floor, binah fight, hokma fight, 3x apostles and black star - 
-2 particle system-
+2 particle system -
 2 3d objects that move through the scene on its own
 
 our vroid models (new outfits)
