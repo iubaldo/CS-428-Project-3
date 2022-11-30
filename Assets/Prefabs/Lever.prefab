@@ -4814,7 +4814,7 @@ MonoBehaviour:
   Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2672290861009525564}
+      - m_Target: {fileID: 1949383429}
         m_TargetAssemblyTypeName: BGMManager, Assembly-CSharp
         m_MethodName: Switchtracks
         m_Mode: 3
@@ -5048,7 +5048,19 @@ MonoBehaviour:
     isActive: 1
   ValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   StepValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11046,7 +11058,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6231944115417433510}
-  - component: {fileID: 2672290861009525564}
+  - component: {fileID: 1949383429}
   m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
@@ -11061,7 +11073,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6231944115417433529}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0.7071068, w: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 1.288, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11071,7 +11083,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 270, y: 180, z: 0}
---- !u!114 &2672290861009525564
+--- !u!114 &1949383429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11084,7 +11096,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  tracks: []
+  tracks:
+  - {fileID: 8300000, guid: a4f204363b251dd45934a4dac0ed40d3, type: 3}
+  - {fileID: 8300000, guid: 2d6173047effe3a43beeeeb3d18582be, type: 3}
 --- !u!1 &6231944115565680257
 GameObject:
   m_ObjectHideFlags: 0
@@ -14149,7 +14163,7 @@ MonoBehaviour:
   Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2672290861009525564}
+      - m_Target: {fileID: 1949383429}
         m_TargetAssemblyTypeName: BGMManager, Assembly-CSharp
         m_MethodName: Switchtracks
         m_Mode: 3

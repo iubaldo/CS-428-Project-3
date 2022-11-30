@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// basically just trackManagerLite, only switch between two tracks
+// basically just floorManagerLite, only switch between two tracks
 public class BGMManager : MonoBehaviour
 {
     bool canSwitch = true;
+    int currentTrack = 0;
 
     //Grab the Audio from the record player.
     public AudioSource audioSource;
@@ -14,7 +15,7 @@ public class BGMManager : MonoBehaviour
 
     public void Switchtracks(int targetTrack)
     {
-        if (canSwitch) // don't allow user to switch tracks during a switch
+        if (canSwitch && targetTrack != currentTrack) // don't allow user to switch tracks during a switch
         {
             canSwitch = false;
             StartCoroutine(FadeOut(targetTrack));
@@ -32,6 +33,7 @@ public class BGMManager : MonoBehaviour
         while (Time.time < endTime)
         {
             audioSource.volume = Mathf.Lerp(audioSource.volume, 0, (Time.time - startTime) / waitTime);
+            yield return null;
         }
 
         StartCoroutine(FadeIn(track)); // when done, fade in the next
@@ -45,8 +47,11 @@ public class BGMManager : MonoBehaviour
         float startTime = Time.time;
         float endTime = startTime + waitTime;
 
-        if (track >= 0 && track < tracks.Count)
+        if (track >= 0) // && track < tracks.Count
+        {
+            currentTrack = track;
             audioSource.clip = tracks[track];
+        }
         else
             Debug.LogError("track index out of bounds");
 
@@ -55,6 +60,7 @@ public class BGMManager : MonoBehaviour
         while (Time.time < endTime)
         {
             audioSource.volume = Mathf.Lerp(audioSource.volume, 1, (Time.time - startTime) / waitTime);
+            yield return null;
         }
 
         canSwitch = true;
