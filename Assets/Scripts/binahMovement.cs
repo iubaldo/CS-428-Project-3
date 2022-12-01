@@ -20,8 +20,8 @@ public class binahMovement : MonoBehaviour
     void Update()
     {
         Vector3 v = startingPosition;
-        v.x +=  speed;
-        distanceCovered += Math.Abs(speed);
+        v.x +=  speed *Time.deltaTime;
+        distanceCovered += Math.Abs(speed* Time.deltaTime);
         if (distanceCovered >= distance) {
             speed = speed * -1;
             distanceCovered = 0;
