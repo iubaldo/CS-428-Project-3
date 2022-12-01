@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WhiteNight : MonoBehaviour
 {
-    public Transform player;
+    public Transform player;  
 
 
     private void Start()
@@ -22,7 +22,7 @@ public class WhiteNight : MonoBehaviour
 
     IEnumerator FloatDown()
     {
-        float waitTime = 1.5f;
+        float waitTime = 5f;
         float startTime = Time.time;
         float endTime = startTime + waitTime;
 

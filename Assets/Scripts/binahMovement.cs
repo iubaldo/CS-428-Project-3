@@ -7,7 +7,6 @@ public class BinahMovement : MonoBehaviour
 {
     public float turnDistance;
     public float speed;
-    Vector3 startingPosition;
     float distanceCovered;
 
 
