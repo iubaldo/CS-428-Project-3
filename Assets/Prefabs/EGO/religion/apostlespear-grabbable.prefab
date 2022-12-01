@@ -5077,7 +5077,7 @@ GameObject:
   - component: {fileID: 3235336746987724003}
   - component: {fileID: 4699352582642866925}
   - component: {fileID: 4726450747052509275}
-  - component: {fileID: 4082522671291557954}
+  - component: {fileID: 598217853619762197}
   m_Layer: 0
   m_Name: apostlespear-grabbable
   m_TagString: Untagged
@@ -5232,8 +5232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d6cb68905534b4d8baf13b96b36cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &4082522671291557954
-CapsuleCollider:
+--- !u!65 &598217853619762197
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5242,10 +5242,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.056147605
-  m_Height: 8.023974
-  m_Direction: 0
-  m_Center: {x: 0.10983976, y: 0, z: 0}
+  serializedVersion: 2
+  m_Size: {x: 8.0162945, y: 0.08584031, z: 0.050766584}
+  m_Center: {x: 0.07580757, y: 0, z: 0}
 --- !u!1 &4216430664842605595
 GameObject:
   m_ObjectHideFlags: 0
