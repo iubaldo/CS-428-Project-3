@@ -5,7 +5,7 @@ using TMPro;
 
 public class MoneyDisplay : MonoBehaviour
 {
-    public TextMeshProUGUI display;
+    public TextMeshPro display;
 
     private void Update()
     {

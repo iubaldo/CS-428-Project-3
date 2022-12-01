@@ -3,30 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class binahMovement : MonoBehaviour
+public class BinahMovement : MonoBehaviour
 {
-    [SerializeField]float distance;
-    [SerializeField] float speed;
-    private Vector3 startingPosition;
+    public float turnDistance;
+    public float speed;
+    Vector3 startingPosition;
     float distanceCovered;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        startingPosition = transform.position;
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        Vector3 v = startingPosition;
-        v.x +=  speed *Time.deltaTime;
-        distanceCovered += Math.Abs(speed* Time.deltaTime);
-        if (distanceCovered >= distance) {
-            speed = speed * -1;
+        transform.position += transform.forward * speed * Time.deltaTime;
+        distanceCovered += Math.Abs(speed * Time.deltaTime);
+        if (distanceCovered >= turnDistance) {
             distanceCovered = 0;
-            //transform.Rotate(0.0f, 180.0f, 0.0f);
+            StartCoroutine(Rotate());
         }
-        transform.position = v;
+    }
+
+
+    IEnumerator Rotate()
+    {
+        float waitTime = 1f;
+        float startTime = Time.time;
+        float endTime = startTime + waitTime;
+
+        Quaternion newRot = transform.rotation * Quaternion.Euler(0, 180, 0);
+        while (Time.time < endTime)
+        {
+            transform.rotation = Quaternion.Lerp(transform.rotation, newRot, (Time.time - startTime) / waitTime);
+            yield return null;
+        }
+        yield return null;
     }
 }
