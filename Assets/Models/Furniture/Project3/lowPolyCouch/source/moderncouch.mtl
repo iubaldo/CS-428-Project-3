@@ -1,0 +1,13 @@
+# Blender MTL File: 'Coffeeshop.blend'
+# Material Count: 1
+
+newmtl cloth_black
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.039639 0.039639 0.039639
+Ks 0.067010 0.067010 0.067010
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Textures\Leather_003\Leather_003_COLOR.jpg
